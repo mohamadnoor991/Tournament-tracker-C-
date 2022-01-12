@@ -1,0 +1,14 @@
+E:\Github-Programs\Tournament tracker Csharp\Tournament-tracker-C-\TrackerUI\bin\Debug\TrackerUI.exe.config
+E:\Github-Programs\Tournament tracker Csharp\Tournament-tracker-C-\TrackerUI\bin\Debug\TrackerUI.exe
+E:\Github-Programs\Tournament tracker Csharp\Tournament-tracker-C-\TrackerUI\bin\Debug\TrackerUI.pdb
+E:\Github-Programs\Tournament tracker Csharp\Tournament-tracker-C-\TrackerUI\obj\Debug\TrackerUI.csproj.AssemblyReference.cache
+E:\Github-Programs\Tournament tracker Csharp\Tournament-tracker-C-\TrackerUI\obj\Debug\TrackerUI.Properties.Resources.resources
+E:\Github-Programs\Tournament tracker Csharp\Tournament-tracker-C-\TrackerUI\obj\Debug\TrackerUI.csproj.GenerateResource.cache
+E:\Github-Programs\Tournament tracker Csharp\Tournament-tracker-C-\TrackerUI\obj\Debug\TrackerUI.csproj.CoreCompileInputs.cache
+E:\Github-Programs\Tournament tracker Csharp\Tournament-tracker-C-\TrackerUI\obj\Debug\TrackerUI.exe
+E:\Github-Programs\Tournament tracker Csharp\Tournament-tracker-C-\TrackerUI\obj\Debug\TrackerUI.pdb
+E:\Github-Programs\Tournament tracker Csharp\Tournament-tracker-C-\TrackerUI\obj\Debug\TrackerUI.CreatePrizeForm.resources
+E:\Github-Programs\Tournament tracker Csharp\Tournament-tracker-C-\TrackerUI\obj\Debug\TrackerUI.CreateTeamForm.resources
+E:\Github-Programs\Tournament tracker Csharp\Tournament-tracker-C-\TrackerUI\obj\Debug\TrackerUI.CreateTourmamentForm.resources
+E:\Github-Programs\Tournament tracker Csharp\Tournament-tracker-C-\TrackerUI\obj\Debug\TrackerUI.TournamentDashboardForm.resources
+E:\Github-Programs\Tournament tracker Csharp\Tournament-tracker-C-\TrackerUI\obj\Debug\TrackerUI.TournamentViewerForm.resources
