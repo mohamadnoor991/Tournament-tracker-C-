@@ -51,13 +51,14 @@ namespace TrackerUI
             this.createPrizeButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.createPrizeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.createPrizeButton.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.createPrizeButton.Location = new System.Drawing.Point(108, 490);
+            this.createPrizeButton.Location = new System.Drawing.Point(173, 490);
             this.createPrizeButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.createPrizeButton.Name = "createPrizeButton";
             this.createPrizeButton.Size = new System.Drawing.Size(268, 95);
             this.createPrizeButton.TabIndex = 33;
             this.createPrizeButton.Text = "Create Prize";
             this.createPrizeButton.UseVisualStyleBackColor = true;
+            this.createPrizeButton.Click += new System.EventHandler(this.createPrizeButton_Click);
             // 
             // createPrizeLabel
             // 
@@ -94,6 +95,8 @@ namespace TrackerUI
             this.prizeAmountValue.Name = "prizeAmountValue";
             this.prizeAmountValue.Size = new System.Drawing.Size(266, 43);
             this.prizeAmountValue.TabIndex = 35;
+            this.prizeAmountValue.Text = "0";
+            this.prizeAmountValue.TextChanged += new System.EventHandler(this.prizeAmountValue_TextChanged);
             // 
             // prizeAmountLabel
             // 
@@ -112,6 +115,7 @@ namespace TrackerUI
             this.prizePercentageValue.Name = "prizePercentageValue";
             this.prizePercentageValue.Size = new System.Drawing.Size(266, 43);
             this.prizePercentageValue.TabIndex = 37;
+            this.prizePercentageValue.Text = "0";
             this.prizePercentageValue.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // prizePercentageLabel

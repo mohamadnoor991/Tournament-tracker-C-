@@ -1,0 +1,6 @@
+E:\Github-Programs\Tournament tracker Csharp\Tournament-tracker-C-\TrackerLibrary\bin\Debug\TrackerLibrary.dll
+E:\Github-Programs\Tournament tracker Csharp\Tournament-tracker-C-\TrackerLibrary\bin\Debug\TrackerLibrary.pdb
+E:\Github-Programs\Tournament tracker Csharp\Tournament-tracker-C-\TrackerLibrary\obj\Debug\TrackerLibrary.csproj.AssemblyReference.cache
+E:\Github-Programs\Tournament tracker Csharp\Tournament-tracker-C-\TrackerLibrary\obj\Debug\TrackerLibrary.csproj.CoreCompileInputs.cache
+E:\Github-Programs\Tournament tracker Csharp\Tournament-tracker-C-\TrackerLibrary\obj\Debug\TrackerLibrary.dll
+E:\Github-Programs\Tournament tracker Csharp\Tournament-tracker-C-\TrackerLibrary\obj\Debug\TrackerLibrary.pdb
