@@ -15,3 +15,5 @@ E:\Github-Programs\Tournament tracker Csharp\Tournament-tracker-C-\TrackerUI\obj
 E:\Github-Programs\Tournament tracker Csharp\Tournament-tracker-C-\TrackerUI\bin\Debug\TrackerLibrary.dll
 E:\Github-Programs\Tournament tracker Csharp\Tournament-tracker-C-\TrackerUI\bin\Debug\TrackerLibrary.pdb
 E:\Github-Programs\Tournament tracker Csharp\Tournament-tracker-C-\TrackerUI\obj\Debug\TrackerUI.csproj.CopyComplete
+E:\Github-Programs\Tournament tracker Csharp\Tournament-tracker-C-\TrackerUI\bin\Debug\Dapper.dll
+E:\Github-Programs\Tournament tracker Csharp\Tournament-tracker-C-\TrackerUI\bin\Debug\Dapper.xml
