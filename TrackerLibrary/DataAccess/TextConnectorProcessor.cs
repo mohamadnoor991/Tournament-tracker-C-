@@ -47,6 +47,48 @@ namespace TrackerLibrary.DataAccess.TextHelpers
             return output;
         }
 
+        public static List<PersonModel> ConvertToPersonModels(this List<string> lines)
+        {
+
+            List<PersonModel> output = new List<PersonModel>();
+
+            foreach(string line in lines)
+            {
+                string[] cols = line.Split(',');
+
+                PersonModel p = new PersonModel();
+                p.Id = int.Parse(cols[0]);
+                p.FirstName = cols[1];
+                p.LastName = cols[2];
+                p.EmailAddress = cols[3];
+                p.CellPhoneNumber = cols[4];
+                output.Add(p);
+            }
+            return output;
+        }
+
+        public static List<TeamModel> ConvertToTeamModel(this List<string> lines, string peopleFileName)
+        {
+            List<TeamModel> output = new List<TeamModel>();
+            List<PersonModel> people = peopleFileName.FullFilePath().LoadFile().ConvertToPersonModels();
+
+            foreach(string line in lines)
+            {
+                string[] col = line.Split(',');
+
+                TeamModel t = new TeamModel();
+                t.Id = int.Parse(col[0]);
+                t.TeamName = col[1];
+
+                string[] persondIds = col[2].Split('|');
+                foreach(string id in persondIds)
+                {
+                    t.TeamMembers.Add(people.Where(x => x.Id == int.Parse(id)).First());
+
+                }
+            }
+            return output;
+        }
         public static void SaveToPrizeFile(this List<PrizeModel> models, string fileName)
         {
             List<string> lines = new List<string>();
@@ -56,6 +98,50 @@ namespace TrackerLibrary.DataAccess.TextHelpers
                 lines.Add($"{ p.Id },{p.PlaceNumber },{p.PlaceName },{p.PrizeAmount },{p.PrizePercentage }");
             }
             File.WriteAllLines(fileName.FullFilePath(), lines);
+        }
+
+        /// <summary>
+        /// People save method
+        /// </summary>
+        /// <param name="models"></param>
+        /// <param name="fileName"></param>
+        public static void SaveToPeopleFile(this List<PersonModel> models, string fileName)
+        {
+            List<string> lines = new List<string>();
+
+            foreach (PersonModel p in models)
+            {
+                lines.Add($"{ p.Id },{p.FirstName },{p.LastName },{p.EmailAddress },{p.CellPhoneNumber }");
+            }
+            File.WriteAllLines(fileName.FullFilePath(), lines);
+        }
+
+        public static void SaveToTeamFile(this List<TeamModel> models, string fileName)
+        {
+            List<string> lines = new List<string>();
+
+            foreach(TeamModel t in models)
+            {
+                lines.Add($"{t.Id },{t.TeamName },{ConvertPeopleListToString(t.TeamMembers)}");
+            }
+
+            File.WriteAllLines(fileName.FullFilePath(), lines);
+        }
+
+        private static string ConvertPeopleListToString(List<PersonModel> people)
+        {
+            string output = "";
+
+            if(people.Count == 0)
+            {
+                return "";
+            }
+            foreach(PersonModel p in people)
+            {
+                output += $"{p.Id}|";
+            }
+            output = output.Substring(0, output.Length - 1);
+            return output;
         }
     }
 }

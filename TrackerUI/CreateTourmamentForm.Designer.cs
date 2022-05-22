@@ -41,7 +41,7 @@ namespace TrackerUI
             this.addTeamButton = new System.Windows.Forms.Button();
             this.createPrizeButton = new System.Windows.Forms.Button();
             this.touemamentPlayersLabel = new System.Windows.Forms.Label();
-            this.tourmamentPlayersListBox = new System.Windows.Forms.ListBox();
+            this.tournamentTeamsListBox = new System.Windows.Forms.ListBox();
             this.deleteSelectedPlayerButtonButton = new System.Windows.Forms.Button();
             this.deleteSelectedPrizeButton = new System.Windows.Forms.Button();
             this.PrizesListBox = new System.Windows.Forms.ListBox();
@@ -172,17 +172,17 @@ namespace TrackerUI
             this.touemamentPlayersLabel.Text = "Team/Players";
             this.touemamentPlayersLabel.Click += new System.EventHandler(this.touemamentPlayersLabel_Click);
             // 
-            // tourmamentPlayersListBox
+            // tournamentTeamsListBox
             // 
-            this.tourmamentPlayersListBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tourmamentPlayersListBox.Font = new System.Drawing.Font("Segoe UI Light", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tourmamentPlayersListBox.FormattingEnabled = true;
-            this.tourmamentPlayersListBox.ItemHeight = 41;
-            this.tourmamentPlayersListBox.Location = new System.Drawing.Point(535, 160);
-            this.tourmamentPlayersListBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tourmamentPlayersListBox.Name = "tourmamentPlayersListBox";
-            this.tourmamentPlayersListBox.Size = new System.Drawing.Size(395, 166);
-            this.tourmamentPlayersListBox.TabIndex = 22;
+            this.tournamentTeamsListBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tournamentTeamsListBox.Font = new System.Drawing.Font("Segoe UI Light", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tournamentTeamsListBox.FormattingEnabled = true;
+            this.tournamentTeamsListBox.ItemHeight = 41;
+            this.tournamentTeamsListBox.Location = new System.Drawing.Point(535, 160);
+            this.tournamentTeamsListBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tournamentTeamsListBox.Name = "tournamentTeamsListBox";
+            this.tournamentTeamsListBox.Size = new System.Drawing.Size(395, 166);
+            this.tournamentTeamsListBox.TabIndex = 22;
             // 
             // deleteSelectedPlayerButtonButton
             // 
@@ -263,7 +263,7 @@ namespace TrackerUI
             this.Controls.Add(this.PrizesListBox);
             this.Controls.Add(this.PrizesLabel);
             this.Controls.Add(this.deleteSelectedPlayerButtonButton);
-            this.Controls.Add(this.tourmamentPlayersListBox);
+            this.Controls.Add(this.tournamentTeamsListBox);
             this.Controls.Add(this.touemamentPlayersLabel);
             this.Controls.Add(this.createPrizeButton);
             this.Controls.Add(this.addTeamButton);
@@ -298,7 +298,7 @@ namespace TrackerUI
         private System.Windows.Forms.Button addTeamButton;
         private System.Windows.Forms.Button createPrizeButton;
         private System.Windows.Forms.Label touemamentPlayersLabel;
-        private System.Windows.Forms.ListBox tourmamentPlayersListBox;
+        private System.Windows.Forms.ListBox tournamentTeamsListBox;
         private System.Windows.Forms.Button deleteSelectedPlayerButtonButton;
         private System.Windows.Forms.Button deleteSelectedPrizeButton;
         private System.Windows.Forms.ListBox PrizesListBox;

@@ -15,6 +15,35 @@ namespace TrackerLibrary.DataAccess
     public class TextConnector : IDataConnection
     {
         private const string PrizesFile = "PrizesModels.csv";
+        private const string PeopleFile = "personModels.csv";
+        private const string TeamFile = "TeamModels.csv";
+
+        // create person method
+        public PersonModel CreatePerson(PersonModel model)
+        {
+            List<PersonModel> people = PeopleFile.FullFilePath().LoadFile().ConvertToPersonModels();
+
+            //Find the max ID
+            int currentId = 1;
+            if(people.Count > 0)
+            {
+                currentId = people.OrderByDescending(x => x.Id).First().Id + 1;
+            }
+            model.Id = currentId;
+
+            //Add the new record with the new ID
+            people.Add(model);
+
+            // Convert the prizes to List<string>
+            // Save the list<string> to the text file 
+            people.SaveToPeopleFile(PeopleFile);
+
+            return model;
+                
+        }
+
+
+        //Create Peize method
         public PrizeModel CreatePrize(PrizeModel model)
         {
             //Load the text file and Convert the text to List<PrizeModel>
@@ -36,6 +65,35 @@ namespace TrackerLibrary.DataAccess
             prizes.SaveToPrizeFile(PrizesFile);
 
             return model;
+        }
+
+        public TeamModel CreateTeam(TeamModel model)
+        {
+            List<TeamModel> teams = TeamFile.FullFilePath().LoadFile().ConvertToTeamModel(PeopleFile);
+
+            //Find the max ID
+            int currentId = 1;
+            if (teams.Count > 0)
+            {
+                currentId = teams.OrderByDescending(x => x.Id).First().Id + 1;
+            }
+            model.Id = currentId;
+
+            teams.Add(model);
+            teams.SaveToTeamFile(TeamFile);
+
+            return model;
+
+        }
+
+        public List<PersonModel> GetPerson_All()
+        {
+            return PeopleFile.FullFilePath().LoadFile().ConvertToPersonModels(); ;
+        }
+
+        public List<TeamModel> GetTeam_All()
+        {
+            throw new NotImplementedException();
         }
     }
 }
