@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace TrackerLibrary.Models
 {
+    /// <summary> /// Represents what the prize is for the given place. /// </summary>
     public class PrizeModel
     {
         /// <summary>

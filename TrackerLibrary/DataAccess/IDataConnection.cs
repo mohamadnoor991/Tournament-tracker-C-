@@ -16,7 +16,7 @@ namespace TrackerLibrary.DataAccess
         PrizeModel CreatePrize(PrizeModel model); /*Method to save and return the data from prizeForm*/
 
         PersonModel CreatePerson(PersonModel model); // Method to create the new members in the creat team form.
-
+        void CreateTournament(TournamentModel model);
         TeamModel CreateTeam(TeamModel model);
         List<TeamModel> GetTeam_All();
         List<PersonModel> GetPerson_All();

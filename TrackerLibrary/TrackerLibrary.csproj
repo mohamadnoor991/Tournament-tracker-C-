@@ -57,7 +57,8 @@
     <Compile Include="DataAccess\SQLConnector.cs" />
     <Compile Include="Models\TeamModel.cs" />
     <Compile Include="DataAccess\TextConnector.cs" />
-    <Compile Include="Models\TourmamentModel.cs" />
+    <Compile Include="Models\TournamentModel.cs" />
+    <Compile Include="TournamentLogic.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

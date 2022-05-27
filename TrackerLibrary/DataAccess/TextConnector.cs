@@ -17,6 +17,7 @@ namespace TrackerLibrary.DataAccess
         private const string PrizesFile = "PrizesModels.csv";
         private const string PeopleFile = "personModels.csv";
         private const string TeamFile = "TeamModels.csv";
+        private const string TournamentFile = "TournamentModels.csv";
 
         // create person method
         public PersonModel CreatePerson(PersonModel model)
@@ -69,7 +70,7 @@ namespace TrackerLibrary.DataAccess
 
         public TeamModel CreateTeam(TeamModel model)
         {
-            List<TeamModel> teams = TeamFile.FullFilePath().LoadFile().ConvertToTeamModel(PeopleFile);
+            List<TeamModel> teams = TeamFile.FullFilePath().LoadFile().ConvertToTeamModels(PeopleFile);
 
             //Find the max ID
             int currentId = 1;
@@ -86,14 +87,32 @@ namespace TrackerLibrary.DataAccess
 
         }
 
+        public void CreateTournament(TournamentModel model)
+        {
+            List<TournamentModel> tournaments = TournamentFile.FullFilePath()
+                .LoadFile()
+                .ConvertToTournamentModels(TeamFile, PeopleFile,PrizesFile);
+
+            int currentId = 1;
+            if (tournaments.Count > 0)
+            {
+                currentId = tournaments.OrderByDescending(x => x.Id).First().Id + 1;
+            }
+            model.Id = currentId;
+
+            tournaments.Add(model);
+            tournaments.SaveToTournamentFile(TournamentFile);
+
+        }
+
         public List<PersonModel> GetPerson_All()
         {
-            return PeopleFile.FullFilePath().LoadFile().ConvertToPersonModels(); ;
+            return PeopleFile.FullFilePath().LoadFile().ConvertToPersonModels(); 
         }
 
         public List<TeamModel> GetTeam_All()
         {
-            throw new NotImplementedException();
+            return TeamFile.FullFilePath().LoadFile().ConvertToTeamModels(PeopleFile);
         }
     }
 }
