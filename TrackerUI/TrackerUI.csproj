@@ -58,12 +58,14 @@
     <Compile Include="CreateTeamForm.Designer.cs">
       <DependentUpon>CreateTeamForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="CreateTourmamentForm.cs">
+    <Compile Include="CreateTournamentForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CreateTourmamentForm.Designer.cs">
-      <DependentUpon>CreateTourmamentForm.cs</DependentUpon>
+    <Compile Include="CreateTournamentForm.Designer.cs">
+      <DependentUpon>CreateTournamentForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="IPrizeRequester.cs" />
+    <Compile Include="ITeamRequester.cs" />
     <Compile Include="TournamentViewerForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,8 +86,8 @@
     <EmbeddedResource Include="CreateTeamForm.resx">
       <DependentUpon>CreateTeamForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CreateTourmamentForm.resx">
-      <DependentUpon>CreateTourmamentForm.cs</DependentUpon>
+    <EmbeddedResource Include="CreateTournamentForm.resx">
+      <DependentUpon>CreateTournamentForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

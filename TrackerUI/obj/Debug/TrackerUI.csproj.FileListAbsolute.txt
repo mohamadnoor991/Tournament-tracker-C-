@@ -46,7 +46,6 @@ E:\Github-Programs\TournamentTrackerCsharp\Tournament-tracker-C-\TrackerUI\bin\D
 E:\Github-Programs\TournamentTrackerCsharp\Tournament-tracker-C-\TrackerUI\obj\Debug\TrackerUI.csproj.AssemblyReference.cache
 E:\Github-Programs\TournamentTrackerCsharp\Tournament-tracker-C-\TrackerUI\obj\Debug\TrackerUI.CreatePrizeForm.resources
 E:\Github-Programs\TournamentTrackerCsharp\Tournament-tracker-C-\TrackerUI\obj\Debug\TrackerUI.CreateTeamForm.resources
-E:\Github-Programs\TournamentTrackerCsharp\Tournament-tracker-C-\TrackerUI\obj\Debug\TrackerUI.CreateTourmamentForm.resources
 E:\Github-Programs\TournamentTrackerCsharp\Tournament-tracker-C-\TrackerUI\obj\Debug\TrackerUI.Properties.Resources.resources
 E:\Github-Programs\TournamentTrackerCsharp\Tournament-tracker-C-\TrackerUI\obj\Debug\TrackerUI.TournamentDashboardForm.resources
 E:\Github-Programs\TournamentTrackerCsharp\Tournament-tracker-C-\TrackerUI\obj\Debug\TrackerUI.TournamentViewerForm.resources
@@ -55,3 +54,4 @@ E:\Github-Programs\TournamentTrackerCsharp\Tournament-tracker-C-\TrackerUI\obj\D
 E:\Github-Programs\TournamentTrackerCsharp\Tournament-tracker-C-\TrackerUI\obj\Debug\TrackerUI.csproj.CopyComplete
 E:\Github-Programs\TournamentTrackerCsharp\Tournament-tracker-C-\TrackerUI\obj\Debug\TrackerUI.exe
 E:\Github-Programs\TournamentTrackerCsharp\Tournament-tracker-C-\TrackerUI\obj\Debug\TrackerUI.pdb
+E:\Github-Programs\TournamentTrackerCsharp\Tournament-tracker-C-\TrackerUI\obj\Debug\TrackerUI.CreateTournamentForm.resources
